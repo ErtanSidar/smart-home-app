@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="167dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="36dp"
+        android:text="Bluetooth Aç/Kapat"
+        app:layout_constraintBottom_toTopOf="@+id/deviceList"
+        app:layout_constraintEnd_toStartOf="@+id/btnPair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPair"
+        android:layout_width="163dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="27dp"
+        android:text="Cihazları Göster"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBluetooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBluetooth"
+        app:layout_constraintTop_toTopOf="@+id/btnBluetooth" />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="72dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBluetooth" />
+</androidx.constraintlayout.widget.ConstraintLayout>

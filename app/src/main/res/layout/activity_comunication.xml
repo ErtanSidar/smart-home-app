@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".Comunication">
+
+    <ImageButton
+        android:id="@+id/openDoor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/openAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/openCamelliaLight"
+        app:srcCompat="@drawable/doorclosed" />
+
+    <ImageButton
+        android:id="@+id/openSystem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/closeHomeLight"
+        app:layout_constraintEnd_toStartOf="@+id/closeSystem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/opensystem" />
+
+    <ImageButton
+        android:id="@+id/closeSystem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/openFenceLight"
+        app:layout_constraintEnd_toStartOf="@+id/openHomeLight"
+        app:layout_constraintStart_toEndOf="@+id/openSystem"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/closesystem" />
+
+    <ImageButton
+        android:id="@+id/openHomeLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/closeFenceLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/closeSystem"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homeledopen" />
+
+    <ImageButton
+        android:id="@+id/closeHomeLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/openPoolLight"
+        app:layout_constraintEnd_toStartOf="@+id/openFenceLight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openSystem"
+        app:srcCompat="@drawable/homeledclose" />
+
+    <ImageButton
+        android:id="@+id/openFenceLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/closePoolLight"
+        app:layout_constraintEnd_toStartOf="@+id/closeFenceLight"
+        app:layout_constraintStart_toEndOf="@+id/closeHomeLight"
+        app:layout_constraintTop_toBottomOf="@+id/closeSystem"
+        app:srcCompat="@drawable/fenceledopen" />
+
+    <ImageButton
+        android:id="@+id/closeFenceLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/openCamelliaLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/openFenceLight"
+        app:layout_constraintTop_toBottomOf="@+id/openHomeLight"
+        app:srcCompat="@drawable/fenceledclose" />
+
+    <ImageButton
+        android:id="@+id/openPoolLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/closeCamelliaLight"
+        app:layout_constraintEnd_toStartOf="@+id/closePoolLight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/closeHomeLight"
+        app:srcCompat="@drawable/poolledopen" />
+
+    <ImageButton
+        android:id="@+id/closePoolLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/openAlarm"
+        app:layout_constraintEnd_toStartOf="@+id/openCamelliaLight"
+        app:layout_constraintStart_toEndOf="@+id/openPoolLight"
+        app:layout_constraintTop_toBottomOf="@+id/openFenceLight"
+        app:srcCompat="@drawable/poolledclose" />
+
+    <ImageButton
+        android:id="@+id/openCamelliaLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/openDoor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/closePoolLight"
+        app:layout_constraintTop_toBottomOf="@+id/closeFenceLight"
+        app:srcCompat="@drawable/pergolaledopen" />
+
+    <ImageButton
+        android:id="@+id/closeCamelliaLight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/openAlarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openPoolLight"
+        app:srcCompat="@drawable/pergolaledclose" />
+
+    <ImageButton
+        android:id="@+id/openAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/openDoor"
+        app:layout_constraintStart_toEndOf="@+id/closeCamelliaLight"
+        app:layout_constraintTop_toBottomOf="@+id/closePoolLight"
+        app:srcCompat="@drawable/alarm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
